@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scle=1.0'>
+    <title>Project of survey form for movie website</title>
+    <link 
+    rel='stylesheet' 
+    href='styles.css'
+    >
+  </head>
+  <body>
+   <!-- heading title -->
+    <h1 id='title'>Spotlight Box</h1>
+    <p id='description'>Thank you for taking your time to anwer this survey</p>
+    <!-- form details go inside the form-->
+    <form id='survey-form'>
+      <div class='form-control' id='specifics'>
+      <label
+      for='name-label'
+      id='name-label'
+      >Name</label>
+      <input 
+      type='text'
+      id='name'
+      name='name'
+      placeholder='Enter your Name'
+      required></input>
+      <label 
+      for='email'
+      id='email-label'
+      >Email</label>
+      <input
+      type='email'
+      name='email'
+      id='email'
+      placeholder='Enter your Email'
+      required></input>
+      <label 
+      for='number'
+      id='number-label'
+      >Number</label>
+      <input
+      type='number'
+      id='number'
+      name='number'
+      placeholder='Enter your Number'
+      min=10
+      max=15></input>
+      </div>
+
+      <!--dropdown options-->
+      <div class='form-control'>
+      <label>
+        What best describes you as a movie fan
+      </label>
+      <select id='dropdown' name='dropdown'>
+        <option value='movie goer'>Movie Goer</option>
+        <option value='avid fan'>Avid Fan</option>
+        <option value='genre enthusiast'>Genre Enthusiast</option>
+      </select>
+      </div>
+
+      <!-- radio buttons -->
+      <div class='form-control' id='radio'>
+      <label>
+        Would you recommend us to your friends
+      </label>
+      <label
+       for='recommend-1'>
+        <input
+         type='radio'
+          value='yes'
+           id='recommend-1'
+           name='recommend'
+           >Yes</input>
+      </label>
+      <label for='recommend-2'>
+        <input
+         type='radio'
+          id='recommend-2'
+          name='recommend'
+          value='no'
+          >No</input>
+      </label>
+      <label for='recommend-3'>
+        <input 
+        type='radio' 
+        id='recommend-3'
+        name='recommend'
+        value='maybe'
+        >Maybe</input>
+      </label>
+      <label for='recommend-4'>
+        <input
+         type='radio' 
+         id='recommend-4'
+         name='recommend'
+         value='other'
+         
+         >Other</input>
+      </label>
+      </div>
+
+<!-- checkboxes -->
+<div class='form-control' id='check'>
+<label>What genre is your favorite</label>
+<label for='inp-1'>
+  <input 
+  type='checkbox' 
+  id='inp' 
+  value='anime'
+  >Anime</input>
+</label>
+<label for='inp-2'>
+  <input 
+  type='checkbox' 
+  id='inp'
+  value='horror'
+  >Horror</input>
+</label>
+<label for='inp-3'>
+  <input
+   type='checkbox'
+    id='inp'
+    value='adventure'
+    >Adventure</input>
+</label>
+<label for='inp-4'>
+  <input
+   type='checkbox'
+    id='inp'
+    value='action'
+    >Action</input>
+</label>
+<label for='inp-5'>
+  <input 
+  type='checkbox'
+   id='inp'
+   value='sci-fi'
+   >Sci-fi</input>
+</label>
+<label for='inp-6'>
+  <input 
+  type='checkbox' 
+  id='inp'
+  value='fantasy'
+  >Fantasy</input>
+</label>
+<label for='inp-7'>
+  <input
+   type='checkbox'
+    id='inp'
+    value='romance'
+    >Romance</input>
+</label>
+<label for='inp-8'>
+  <input
+   type='checkbox'
+    id='inp'
+    value='mystery'
+    >Mystery</input>
+</label>
+</div>
+
+<!-- textarea -->
+<div class='form-control' id="comment">
+<label for='comment'>
+  Leave comments or suggestions
+</label>
+      <textarea type='text' id='comment' rows=5></textarea>
+</div>
+      <button type='submit' id='submit'>Submit</button>
+    </form>
+  </body>
+</html>
